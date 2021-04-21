@@ -48,6 +48,11 @@ export default {
           to: "/emergency",
           text: "应急事件",
         },
+        {
+          id: 6,
+          to: "/about",
+          text: "应急事件",
+        },
       ],
     };
   },

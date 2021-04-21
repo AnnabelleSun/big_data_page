@@ -34,8 +34,9 @@
     </div>
     <div class="lebox">
       <p>dd</p>
-      <p id="myChart" style="width: 600px;height:400px;">dhhjhjhd</p>
-
+      <div id="app">
+        <div id="main" style="width: 600px;height:400px;">姐姐</div>
+      </div>
     </div>
     <div class="cebox">
       <p>dd</p>
@@ -48,9 +49,15 @@
 
 
 <script>
-export default {
-  
-}
+  export default {
+    name: "app",
+    methods: {
+     
+    },
+    mounted() {
+      
+    }
+  };
 </script>
 
 
