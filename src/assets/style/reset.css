@@ -7,6 +7,7 @@ pre, form, fieldset, table, th, td {
     margin:0px;
     padding:0px;
     box-sizing: border-box;
+    color: #fff;
     }
 html,body{
     height: 100%;
@@ -20,16 +21,16 @@ a{
     text-decoration:none;
 }
 a:link{
-    color:#000;
+    color:#fff;
 }
 a:visited{
-    color:#000;
+    color:#fff;
 }
 a:hover{
-    color:#000;
+    color:#fff;
 }
 a:active{
-    color:#000;
+    color:#fff;
 }
 input::-ms-clear{
     display:none;
