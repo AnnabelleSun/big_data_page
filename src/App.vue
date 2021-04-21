@@ -1,10 +1,14 @@
 <template>
   <div class="app">
+    <div>{{ title }}</div>
     <div id="nav">
-    <div>{{title}}</div>
-    <router-link v-for="item in routerLinks" :key="item.id" :to="item.to">{{item.text}}</router-link>
-  </div>
-  <router-view />
+      <el-row>
+        <el-col :span="4" v-for="item in routerLinks" :key="item.id">
+          <router-link :to="item.to">{{ item.text }}</router-link>
+        </el-col>
+      </el-row>
+    </div>
+    <router-view />
   </div>
 </template>
 
@@ -12,42 +16,42 @@
 export default {
   data() {
     return {
-      title: '大数据分析系统',
+      title: "大数据分析系统",
       routerLinks: [
         {
           id: 0,
-          to: '/live',
-          text: '实时监测'
+          to: "/live",
+          text: "实时监测",
         },
         {
           id: 1,
-          to: '/tickets',
-          text: '票务信息'
+          to: "/tickets",
+          text: "票务信息",
         },
         {
           id: 2,
-          to: '/market',
-          text: '营销数据'
+          to: "/market",
+          text: "营销数据",
         },
         {
           id: 3,
-          to: '/operate',
-          text: '运营数据'
+          to: "/operate",
+          text: "运营数据",
         },
         {
           id: 4,
-          to: '/tourist',
-          text: '用户画像'
+          to: "/tourist",
+          text: "用户画像",
         },
         {
           id: 5,
-          to: '/emergency',
-          text: '应急事件'
-        }
-      ]
-    }
-  }
-}
+          to: "/emergency",
+          text: "应急事件",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style lang="scss">
