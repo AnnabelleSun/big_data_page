@@ -19,16 +19,16 @@ a{
     text-decoration:none;
 }
 a:link{
-    color:#fff;
+    color:#000;
 }
 a:visited{
-    color:#fff;
+    color:#000;
 }
 a:hover{
-    color:#fff;
+    color:#000;
 }
 a:active{
-    color:#fff;
+    color:#000;
 }
 input::-ms-clear{
     display:none;
@@ -62,30 +62,4 @@ img{
 }
 ul,ol,li{
     list-style-type:none;
-}
-/*公共方法*/
-.clear{
-    clear: both;
-}
-.clearleft{
-    clear: left;
-}
-.clearright{
-    clear: right;
-}
-.floatleft{
-    float: left;
-}
-.floatright{
-    float: right;
-}
-.cursor{
-    cursor: pointer;
-}
-/*背景及色值表*/
-.bg000{
-    background: #000;
-}
-.color000{
-    color: #000;
 }
