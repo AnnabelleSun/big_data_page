@@ -1,14 +1,18 @@
 <template>
   <div class="app">
-    <div>{{ title }}</div>
-    <div id="nav">
+    <div class="title-1 container">{{ title }}</div>
+    <div class="container">
       <el-row>
         <el-col :span="4" v-for="item in routerLinks" :key="item.id">
-          <router-link :to="item.to">{{ item.text }}</router-link>
+          <div class="link">
+            <router-link :to="item.to">{{ item.text }}</router-link>
+          </div>
         </el-col>
       </el-row>
     </div>
-    <router-view />
+    <div class="container main">
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -55,7 +59,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import url(./assets/style/reset.css);
 #app {
   width: 100%;
   height: 100%;
@@ -64,5 +67,13 @@ export default {
   background: url(./assets/img/bg.jpeg);
   width: 100%;
   height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  .main {
+    flex: 1;
+    margin-bottom: 0;
+  }
 }
 </style>
