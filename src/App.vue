@@ -9,6 +9,7 @@
           </div>
         </el-col>
       </el-row>
+      <!-- <router-link to="/live">实时监测</router-link> -->
     </div>
     <div class="container main">
       <router-view />

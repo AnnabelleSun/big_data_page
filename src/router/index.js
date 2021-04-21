@@ -14,32 +14,32 @@ const routes = [
     component: Home
   },
   {
-    to: '/live',
+    path: '/live',
     name: '实时监测',
     component: Live
   },
   {
-    to: '/tickets',
+    path: '/tickets',
     name: '票务信息',
     component: Tickets
   },
   {
-    to: '/market',
+    path: '/market',
     name: '营销数据',
     component: Market
   },
   {
-    to: '/operate',
+    path: '/operate',
     name: '运营数据',
     component: Operate
   },
   {
-    to: '/tourist',
+    path: '/tourist',
     name: '用户画像',
     component: Tourist
   },
   {
-    to: '/emergency',
+    path: '/emergency',
     name: '应急事件',
     component: Emergency
   },
